@@ -194,7 +194,7 @@ $terms                      = $templater->get_option( 'bewpi_terms' );
 			echo '<td>'.$product_price.'</td>';
 			echo '</tr>';
 		}
-		$all_fee = ($order_subtotal_af + $order_shipping + $insurance) * 0.15;
+		$all_fee = ($order_subtotal_af + $order_shipping ) * 0.15;
 	}else{
 		foreach ( $invoice->get_columns_data() as $index => $row ) {
 			echo '<tr class="item">';
